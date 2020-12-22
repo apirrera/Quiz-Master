@@ -1,190 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background" />
-
-    <LinearLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        tools:context=".MainActivity">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="50dp"
-            android:text="Quiz Master"
-            android:textColor="#ffffff"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What century did the Baroque Period start?" />
-
-            <CheckBox
-                android:id="@+id/checkbox_meat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="16th to 17th century" />
-
-            <CheckBox
-                android:id="@+id/checkbox_cheese"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2000th" />
-
-        </LinearLayout>
-
-        <Space
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Which is not a Baroque artist?" />
-
-            <CheckBox
-                android:id="@+id/checkbox_meat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Da Vinci" />
-
-            <CheckBox
-                android:id="@+id/checkbox_cheese"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yo mama" />
-
-        </LinearLayout>
-
-        <Space
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Who was the artist?" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/thecolossus" />
-
-            <CheckBox
-                android:id="@+id/checkbox_meat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="16th to 17th century" />
-
-            <CheckBox
-                android:id="@+id/checkbox_cheese"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2000th" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What century did the Baroque Period start?" />
-
-            <CheckBox
-                android:id="@+id/checkbox_meat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="16th to 17th century" />
-
-            <CheckBox
-                android:id="@+id/checkbox_cheese"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2000th" />
-
-        </LinearLayout>
-
-        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fillViewport="false" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What century did the Baroque Period start?" />
+                android:padding="40dp"
+                android:text="Quiz Master"
+                android:textColor="#ffffff"
+                android:textSize="50sp"
+                android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/checkbox_meat"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
-                android:text="16th to 17th century" />
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/checkbox_cheese"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What century did the Baroque Period start?" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_meat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16th to 17th century" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000s" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1990 - 1994" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14th - 15th century" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
-                android:text="2000th" />
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Which is not a Baroque artist?" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_meat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Da Vinci" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caravaggio" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rembrandt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aleijadinho" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who was the artist?" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/thecolossus" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="The artist full name"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Does the word baroque come from the Portuguese word barroco?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:onClick="Complete"
+                android:text="COMPLETE"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
         </LinearLayout>
-
-        <Space
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:onClick="Complete"
-            android:text="COMPLETE"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

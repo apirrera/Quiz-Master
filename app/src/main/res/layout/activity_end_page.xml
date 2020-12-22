@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="50dp"
+            android:padding="5dp"
             android:text="Results"
             android:textColor="#ffffff"
             android:textSize="50sp"
@@ -32,17 +32,21 @@
             android:layout_height="wrap_content"
             android:text="Score"
             android:textColor="#ffffff"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textColor="#ffffff"
+            android:background="@drawable/border"
             android:textSize="50sp"
+            android:textColor="#00688B	"
             android:textStyle="bold" />
 
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
 
         <Button
             android:layout_width="200dp"
