@@ -42,28 +42,29 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What century did the Baroque Period start?" />
+                    android:text="What century did the Baroque Period start?"
+                    android:id="@+id/question1"/>
 
                 <CheckBox
-                    android:id="@+id/checkbox_meat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="16th to 17th century" />
+                    android:text="16th to 17th century"
+                    android:id="@+id/answer1"/>
 
                 <CheckBox
-                    android:id="@+id/checkbox_cheese"
+                    android:id="@+id/answer2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2000s" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_cheese"
+                    android:id="@+id/incorrect1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1990 - 1994" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_cheese"
+                    android:id="@+id/incorrect2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="14th - 15th century" />
@@ -90,25 +91,29 @@
                     android:id="@+id/checkbox_meat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Da Vinci" />
+                    android:text="Da Vinci"
+                    android:onClick="Answer2"/>
 
                 <CheckBox
                     android:id="@+id/checkbox_cheese"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Caravaggio" />
+                    android:text="Caravaggio"
+                    android:onClick="Incorrect"/>
 
                 <CheckBox
                     android:id="@+id/checkbox_cheese"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rembrandt" />
+                    android:text="Rembrandt"
+                    android:onClick="Incorrect"/>
 
                 <CheckBox
                     android:id="@+id/checkbox_cheese"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aleijadinho" />
+                    android:text="Aleijadinho"
+                    android:onClick="Incorrect"/>
 
             </LinearLayout>
 
@@ -165,12 +170,14 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes" />
+                        android:text="Yes"
+                        android:onClick="Answer4"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No" />
+                        android:text="No"
+                        android:onClick="Incorrect"/>
                 </RadioGroup>
 
             </LinearLayout>

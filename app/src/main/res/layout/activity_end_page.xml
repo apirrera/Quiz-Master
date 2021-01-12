@@ -42,7 +42,8 @@
             android:background="@drawable/border"
             android:textSize="50sp"
             android:textColor="#00688B	"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/Results"/>
 
         <Space
             android:layout_width="20dp"
