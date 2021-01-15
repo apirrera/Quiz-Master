@@ -192,6 +192,7 @@
                 android:onClick="Complete"
                 android:text="COMPLETE"
                 android:textColor="#000000"
+                android:id="@+id/Submit"
                 android:textSize="20sp" />
 
         </LinearLayout>
