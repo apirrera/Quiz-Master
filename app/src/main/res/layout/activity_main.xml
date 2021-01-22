@@ -49,22 +49,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="16th to 17th century"
-                    android:id="@+id/answer1"/>
+                    android:id="@+id/checkbox1a" />
 
                 <CheckBox
-                    android:id="@+id/answer2"
+                    android:id="@+id/checkbox1b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2000s" />
 
                 <CheckBox
-                    android:id="@+id/incorrect1"
+                    android:id="@+id/checkbox1c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1990 - 1994" />
 
                 <CheckBox
-                    android:id="@+id/incorrect2"
+                    android:id="@+id/checkbox1d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="14th - 15th century" />
@@ -142,6 +142,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="The artist full name"
+                    android:id="@+id/entertext"
                     android:inputType="textMultiLine" />
 
             </LinearLayout>
@@ -195,6 +196,44 @@
                 android:id="@+id/Submit"
                 android:textSize="20sp" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Results"
+                    android:textColor="#ffffff"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Results"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:text="0"
+                    android:textColor="#00688B	"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
