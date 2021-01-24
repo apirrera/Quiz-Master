@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:fillViewport="false">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -40,16 +40,16 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/question1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What century did the Baroque Period start?"
-                    android:id="@+id/question1"/>
+                    android:text="What century did the Baroque Period start?" />
 
                 <CheckBox
+                    android:id="@+id/checkbox1a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="16th to 17th century"
-                    android:id="@+id/checkbox1a" />
+                    android:text="16th to 17th century" />
 
                 <CheckBox
                     android:id="@+id/checkbox1b"
@@ -88,32 +88,28 @@
                     android:text="Which is not a Baroque artist?" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_meat"
+                    android:id="@+id/checkbox2a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Da Vinci"
-                    android:onClick="Answer2"/>
+                    android:text="Da Vinci" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_cheese"
+                    android:id="@+id/checkbox2b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Caravaggio"
-                    android:onClick="Incorrect"/>
+                    android:text="Caravaggio" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_cheese"
+                    android:id="@+id/checkbox2c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rembrandt"
-                    android:onClick="Incorrect"/>
+                    android:text="Rembrandt" />
 
                 <CheckBox
-                    android:id="@+id/checkbox_cheese"
+                    android:id="@+id/checkbox2d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aleijadinho"
-                    android:onClick="Incorrect"/>
+                    android:text="Aleijadinho" />
 
             </LinearLayout>
 
@@ -139,10 +135,10 @@
                     android:src="@drawable/thecolossus" />
 
                 <EditText
+                    android:id="@+id/entertext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="The artist full name"
-                    android:id="@+id/entertext"
                     android:inputType="textMultiLine" />
 
             </LinearLayout>
@@ -169,16 +165,16 @@
                     android:orientation="vertical">
 
                     <RadioButton
+                        android:id="@+id/Answer4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
-                        android:onClick="Answer4"/>
+                        android:text="Yes" />
 
                     <RadioButton
+                        android:id="@+id/Incorrect"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        android:onClick="Incorrect"/>
+                        android:text="No" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -188,13 +184,23 @@
                 android:layout_height="20dp" />
 
             <Button
+                android:id="@+id/Submit"
                 android:layout_width="200dp"
                 android:layout_height="70dp"
-                android:onClick="Complete"
-                android:text="COMPLETE"
+                android:onClick="SubmitClick"
+                android:text="Submit"
                 android:textColor="#000000"
-                android:id="@+id/Submit"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/Retake"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="@string/retake"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -232,6 +238,13 @@
                 <Space
                     android:layout_width="20dp"
                     android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:visibility="invisible" />
 
             </LinearLayout>
         </LinearLayout>
