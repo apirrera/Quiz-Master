@@ -200,7 +200,8 @@
                 android:text="@string/retake"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:onClick="RetakeClick"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
